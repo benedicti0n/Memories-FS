@@ -1,13 +1,9 @@
-import { useState } from 'react'
-import { Container, AppBar, Typography, Grow, Grid } from '@mui/material'
+import React from 'react'
 
-function App() {
-
-  return (
-    <>
-    <h1>hi</h1>
-    </>
-  )
+const App = () => {
+    return (
+        <div>App</div>
+    )
 }
 
 export default App
