@@ -5,7 +5,10 @@ import formSchema from '../schema';
 const InputForm = () => {
     const { handleSubmit, handleChange, values, handleBlur } = useFormik({
         initialValues: {
-            creator: ""
+            creator: "",
+            title: "",
+            message: "",
+            tags: ""
         },
         validationSchema: formSchema,
     }
