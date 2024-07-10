@@ -26,7 +26,12 @@ const formSchema = yup.object().shape({
             if (!value) return '';
             const tags = value.split(',').map(tag => `#${tag.trim()}`);
             return tags.join(',');
-        })
+        }),
+
+    image: yup.mixed()
+        .required('Image is required')
+        .test("FILE_SIZE", "Too Big!", (value) => value && value.size < 1024 * 1024)
+        .test("FILE_TYPE", "Invalid!", (value) => value && ['image/jpg', 'image/jpeg', 'image/png'].includes(value.type))
 });
 
 export default formSchema;
