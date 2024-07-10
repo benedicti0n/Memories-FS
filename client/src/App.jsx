@@ -1,6 +1,6 @@
-import Header from "./Components/Header"
-import InputForm from "./Components/InputForm"
-import AllMemories from "./Components/AllMemories"
+import Header from "./components/Header"
+import InputForm from "./components/InputForm"
+import AllMemories from "./components/AllMemories"
 
 function App() {
 
